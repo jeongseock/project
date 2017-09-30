@@ -4,10 +4,10 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./app.js",
+  entry: "./Public/js/client.js",
   output: {
-    path: __dirname + "/public/js",
-    filename: "bundle.js"
+    path: __dirname + "/public",
+    filename: "client.min.js"
   },
   module: {
     loaders: [
