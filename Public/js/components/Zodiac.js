@@ -9,7 +9,7 @@ export default class Zodiac extends React.Component {
 		return(
 			<div>
 			<h1>{this.props.symbol}</h1>
-			<input onSubmit = {this.handleChange.bind(this)}/>
+			<input onChange = {this.handleChange.bind(this)}/>
 			</div>
 			);
 	}
