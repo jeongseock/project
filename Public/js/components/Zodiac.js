@@ -3,7 +3,7 @@ import React from "react";
 export default class Zodiac extends React.Component {
 	constructor(){
 		super();
-		this.state = {sign: 'hi', month: 0, day: 0};
+		this.state = {sign: 'Zodiac', month: 0, day: 0};
 
 	}
 	handleSubmit(e){
