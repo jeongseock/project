@@ -8,18 +8,18 @@ export default class Zodiac extends React.Component {
 	}
 	handleSubmit(e){
 		this.setState({sign: "hello"});
-		findZodiac();
+
 	}
 	handleChMon(e){
 		this.setState({month: event.target.value});
+		console.log(this.state.month);
 	}
 	handleChDay(e){
 		this.setState({day: event.target.value});
 	}	
-	findZodiac(){
-		return sign;
-	}
+
 	render() {
+			console.log(this.state.month);
 		return(
 			<form onSubmit = {this.handleSubmit.bind(this)}>
 			<input type = "text" onChange = {this.handleChMon.bind(this)}/>
@@ -29,6 +29,7 @@ export default class Zodiac extends React.Component {
 			<input type="submit" value="submit"/>
 
 			<h1>{this.state.sign}</h1>
+
 			</form>
 			);
 	}
