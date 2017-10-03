@@ -27,6 +27,8 @@ export default class Zodiac extends React.Component {
 			<input type = "text" onChange = {this.handleChDay.bind(this)}/>
 
 			<input type="submit" value="submit"/>
+
+			<h1>{this.state.sign}</h1>
 			</form>
 			);
 	}
