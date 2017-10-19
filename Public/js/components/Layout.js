@@ -8,12 +8,12 @@ export default class Layout extends React.Component {
 
 	render() {
 		return(
-			<div>
+			<center><div>
 				<Header title = "Which Zodiac are you?"/>
 				<p>Type your Month/ Date of Birth:(ie. 02/17 if born on February 17th)</p>
 				<Zodiac sign/>
 			</div>
-
+			</center>
 			);
 	}
 }

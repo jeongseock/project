@@ -82,7 +82,6 @@ export default class Zodiac extends React.Component {
 			this.setState({sign : 'Capricorn'});	
 			}
 		}
-
 	}
 	handleChMon(e){
 		this.setState({month: e.target.value});
@@ -95,14 +94,10 @@ export default class Zodiac extends React.Component {
 	render() {
 		return(
 			<form onSubmit = {this.handleSubmit.bind(this)}>
-			<input type = "number" onChange = {this.handleChMon.bind(this)}/>
-
-			<input type = "number" onChange = {this.handleChDay.bind(this)}/>
-
+			<input type ="number" onChange ={this.handleChMon.bind(this)}/>
+			<input type ="number" onChange ={this.handleChDay.bind(this)}/>
 			<input type="submit" value="submit"/>
-
 			<h1>{this.state.sign}</h1>
-
 			</form>
 			);
 	}

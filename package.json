@@ -11,8 +11,9 @@
   "dependencies": {
     "babel-loader": "^7.1.2",
     "express": "^4.15.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^15.6.2",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^15.6.2",
     "webpack": "^3.6.0"
   },
   "devDependencies": {
