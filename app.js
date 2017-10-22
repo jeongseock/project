@@ -4,7 +4,7 @@ var app = express();
 var path = require('path');
 
 app.get('/', function (req, res) {
-  res.sendFile(path.resolve(__dirname +'/public/index.html'));
+  res.sendFile('/public/index.html',{root: './'});
 })
 app.use(express.static(__dirname + '/public'));
 app.listen(process.env.PORT || 5000);
